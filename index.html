@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main Page</title>
+
+		<!--Favicon Link-->
+		<link rel="icon" href="image/favicon.ico" />
+
+		<!--Normalize.CSS and Google Font Links-->
+		<link rel="stylesheet" href="normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="about/index.html">About</a></li>
+					<li><a href="form/index.html">Form</a></li>
+					<li><a href="https://www.google.com/">Google</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="card">
+				<a href="#">
+					<div class="card-image IMG-1">
+						<p>
+							Overlooking Machu Picchu
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="#">
+					<div class="card-image IMG-2">
+						<p>
+							Hiking into Machu Picchu
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="#">
+					<div class="card-image IMG-3">
+						<p>
+							Inca Ruins
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="#">
+					<div class="card-image IMG-4">
+						<p>
+							The supposed royal palace
+						</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<img src="images/IMG-1025.jpg" alt="A Lady Hiking" width="600" />
+
+		<div>
+			<p><strong>Here's my SVG icon. Wish I had a better title.</strong></p>
+			<svg width="400" height="180">
+				<rect
+					x="50"
+					y="20"
+					rx="20"
+					ry="20"
+					width="150"
+					height="150"
+					style="
+						fill: rgb(0, 255, 13);
+						stroke: rgb(19, 10, 148);
+						stroke-width: 10;
+						opacity: 0.6;
+					"
+				/>
+			</svg>
+		</div>
+
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1>Hero Image</h1>
+				<h3>Hike through the Andes</h3>
+				<p>
+					The Andes are very dry on the Pacific side, but turn to rainforest the further East you travel. 
+					These mountains were just starting to get more vegitation.
+				</p>
+			</div>
+			<picture>
+				<img
+					src="images/IMG-0996.jpg"
+					alt="Nature"
+					srcset="
+						images/IMG-1021.jpg 2x,
+						images/IMG-1026.jpg 3x,
+						images/IMG-1029.jpg 4x
+					"
+					onerror="this.onerror=null;this.src='images/IMG-1033.jpg';"
+				/>
+			</picture>
+		</div>
+
+		<h1>First Heading Level</h1>
+		<p>
+			This is just a sample of what I'm going to put here in the future. I hope you really enjoy reading this. 
+			Isn't there some Latin placeholder text I always see? 
+		</p>
+		<h2>Second Heading Level</h2>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, veniam
+			itaque iusto aliquam perferendis fugiat necessitatibus numquam animi
+			adipisci? Nostrum facere, dolorem maiores mollitia necessitatibus fugiat
+			non, eius hic deserunt cum quibusdam architecto voluptates reprehenderit
+			totam aliquid exercitationem ut esse!
+		</p>
+
+		<h3>Third Heading Level</h3>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maxime ex
+			consectetur modi ipsam ullam adipisci exercitationem possimus, commodi
+			minus eos porro voluptatem aspernatur suscipit voluptatibus voluptates
+			temporibus, blanditiis mollitia.
+		</p>
+
+		<main>
+			<article>
+				<h2>Article 1</h2>
+				<p>
+					Hiking is a common form of exercise. It's a great way
+					to get in shape, increase heart health, and clean out your lungs,
+					although medical consesus hasn't been reached regarding that last point.
+					For some hiking is the purpose, but others might hike to:
+				</p>
+
+				<ul>
+					<li>Take Pictures</li>
+					<li>Bird/Animal Watch</li>
+					<li>Practice Painting</li>
+					<li>Travel/See New Places</li>
+				</ul>
+				<p>
+					This past summer my wife and I travelled to Peru and spent 5 days hiking to 
+					Maccu Picchu in the Andes. It was a magnificent trip, although we got Covid-19 
+					in Peru and getting home was much more difficult than we anticipated.
+				</p>
+			</article>
+			<a href="#" class="button1">Learn More</a>
+			<article>
+				<h2>Article 2</h2>
+				<p>
+					There are ample places to hike in Utah. We are blessed with immediate access to 
+					alpine terrain. But for my wife and I, we also like to travel and see new places.
+					Because of this we have hiked in these places as well:
+				</p>
+				<ol>
+					<li>Nepal</li>
+					<li>Italy</li>
+					<li>
+						United States
+						<ul>
+							<!--Start of nested list-->
+							<li>Wyoming</li>
+							<li>Hawaii</li>
+							<li>California</li>
+						</ul>
+						<!--End of nested list-->
+					</li>
+				</ol>
+
+				<p>
+					We hiked along the Annapurna Circuit in Nepal, along the Meditteranean
+					coast in Cinque Terre, Italy, through Yellowstone, the Sawtooths, and the
+					Windrivers in Wyoming (and Idaho), and we tried to hike Mount Shasta, but
+					it was too hot. 
+				</p>
+				<p>
+					In addition to the exercise aspect of hiking, we also like to include: 
+				</p>
+				<dl>
+					<dt>Painting</dt>
+					<dd>: My wife loves to paint.</dd>
+					<dt>Rock Climbing</dt>
+					<dd>: I grew up climbing and my wife loves to climb, but we don't do it more than 10x a year</dd>
+					<dt>Yoga</dt>
+					<dd>: Yoga in a grove of pines is just different</dd>
+				</dl>
+
+				<aside>
+					<h3>Aside Information</h3>
+					<p>
+						Most of the hikes we do are local. We try to hike every Saturday in the Spring/Fall,
+						once a month in the Winter, and whenever we can in the Summer, if it's not blazing hot.
+					</p>
+				</aside>
+			</article>
+			<a href="#" class="button2">Learn More</a>
+		</main>
+		<footer>
+			<p>Author - <em>Gadd, Spencer</em></p>
+			<p><strong>Copyright - 2022</strong></p>
+		</footer>
+	</body>
+</html>

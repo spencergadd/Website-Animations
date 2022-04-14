@@ -1,0 +1,259 @@
+:root{
+    --indigo: #bb0d0d;
+    --white:#ffffff;
+    --black:#141414;
+    --mangenta:#a31a75;
+    --green:#0db144;
+    --cyan:#eeeeee;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    line-height: 200%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+p{
+    max-width: 70em;
+}
+
+h1, h2, h3,h4,h5,h6 {
+    color: var(--green);
+    line-height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.plant {
+    max-width: 200px;
+    height: 200px;
+    margin-right: 150px;
+    margin-left: 150px;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 150px;
+    background-color:var(--mangenta);
+}
+
+
+
+picture img {
+    width: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(
+        var(--green),
+        var(--black)
+    );
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    margin-bottom: 1000px;
+    margin-top: 0px;
+    opacity: 1000;
+    position: absolute;
+    z-index: 2;
+    color: var(--indigo);
+    font-size: larger;
+    text-align: center;
+    word-spacing: 10px;
+    background-color: #eeeeee;opacity: 0.7;
+    flex-wrap: wrap;
+}
+.hero-image h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+a:visited{
+    color: var(--indigo);
+}
+
+a:hover{
+    color: var(--cyan);
+}
+
+.button1{
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.button1:hover{
+    box-shadow: insert 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: #000;
+}
+
+.button2{
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+main{
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 50rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+aside{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form img{
+    width: 200px;
+}
+
+
+.container{
+    display: flex;
+    background: rgb(27, 27, 27);
+    justify-content: center;
+    max-width: 2000px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 280px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.IMG-1{background-image: url(../images/IMG-1033.jpg);}
+.IMG-2{background-image: url(../images/IMG-1029.jpg);}
+.IMG-3{background-image: url(../images/IMG-0989.jpg);}
+.IMG-4{background-image: url(../images/IMG-1026.jpg);}
+
+.card p{
+    padding: 10px;
+}
+
+.card:hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.IMG-1 p, .IMG-2 p, .IMG-3 p, .IMG-4 p{
+    color: var(--indigo);
+    font-size: larger;
+    max-width: 400px;
+    opacity: 0.9;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+/*--------- LOADER ----------*/
+
+.loader{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sphere{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation:sphere 2s linear infinite;
+
+}
+
+@keyframes sphere{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+
+.ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+
+span{
+    color: #1c0faa;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text{
+    50%{
+        color: black;
+    }
+}
